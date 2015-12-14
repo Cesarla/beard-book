@@ -1,4 +1,7 @@
-My Awesome Book
+Beard Template Engine
 =======
 
-This file file serves as your book's preface, a great place to describe your book's content and ideas.
+Blazing fast logic-less template engine written in Scala used to parse templates using a simple syntax:
+
+    Hello {{user.name}}
+
