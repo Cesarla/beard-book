@@ -50,7 +50,7 @@ Hello {{user.name}}
 ```
 
 ## Block Statement
-Marks one fraction of the code as a block, so it can be [extended](#extends).
+Marks one fraction of the code as a block, so it can be [extended](#extends-statement).
 ```html
 <html>
   <body>
@@ -62,7 +62,7 @@ Marks one fraction of the code as a block, so it can be [extended](#extends).
 ```
 
 ## Yield Statement
-When [extending](#extends) a template, the content that is not included withing a [block statement](#block) will be yielded under the [yield statement](#yield).
+When [extending](#extends) a template, the content that is not included withing a [block statement](#block-statement) will be yielded under the [yield statement](#yield-statement).
 ```html
 <html>
   <body>
@@ -74,8 +74,8 @@ When [extending](#extends) a template, the content that is not included withing 
 <html>
 ```
 
-## Extends
-Extends a template, **contentFor** statements overwrites the [block statement](#block) with the matching name. The rest of the content not marked as **contentFor** will be yielded under the [yield statement](#yield).
+## Extends Statement
+Extends a template, **contentFor** statements overwrites the [block statement](#block-statement) with the matching name. The rest of the content not marked as **contentFor** will be yielded under the [yield statement](#yield-statement).
 ```html
 {{extends "/beard-benchmark/double-column.beard"}}
 {{contentFor header}}
