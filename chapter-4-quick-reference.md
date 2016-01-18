@@ -26,7 +26,7 @@ This is not cool
 ```
 
 ## For Statement
-Inside of the for, we expose some helpers: `isFirst`, `isLast`, `isOdd`, `isEven`. Here how to use them:
+Inside of the for, we expose some helpers: `isFirst`, `isLast`, `isOdd`, `isEven`. Here is how to use them:
 ```html
 <ul>
 {{for user in users}}
@@ -50,7 +50,7 @@ Hello {{user.name}}
 ```
 
 ## Block Statement
-Marks one fraction of the code as block, so it can be [extended](#Extends).
+Marks one fraction of the code as a block, so it can be [extended](#extends-statement).
 ```html
 <html>
   <body>
@@ -62,7 +62,7 @@ Marks one fraction of the code as block, so it can be [extended](#Extends).
 ```
 
 ## Yield Statement
-When [extending](#Extends) a template, the content that is not included withing a block will be yielded under the {{yield}} statement.
+When [extending](#extends) a template, the content that is not included withing a [block statement](#block-statement) will be yielded under the [yield statement](#yield-statement).
 ```html
 <html>
   <body>
@@ -74,7 +74,8 @@ When [extending](#Extends) a template, the content that is not included withing 
 <html>
 ```
 
-## Extends
+## Extends Statement
+Extends a template, **contentFor** statements overwrites the [block statement](#block-statement) with the matching name. The rest of the content not marked as **contentFor** will be yielded under the [yield statement](#yield-statement).
 ```html
 {{extends "/beard-benchmark/double-column.beard"}}
 {{contentFor header}}
@@ -86,4 +87,5 @@ When [extending](#Extends) a template, the content that is not included withing 
   </ul>
 </nav>
 {{/contentFor}}
+<p>Yielded content</p>
 ```
