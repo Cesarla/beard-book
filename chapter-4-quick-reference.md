@@ -10,8 +10,10 @@
 
 ## Comment Statement
 ```html
-{{comment}}JS Dependancies.{{/comment}}
-<script type="text/javascript" async="" src="http://www.google-analytics.com/ga.js"></script>
+{{# This is an inline comment #}}
+{{# This is
+a multiline comment
+#}}
 ```
 
 ## If Statement
