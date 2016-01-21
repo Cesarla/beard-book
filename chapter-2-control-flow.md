@@ -37,6 +37,15 @@ Here is a simple for statement:
 </div>
 ```
 
+You can expose the index of the current iteration by following the syntax `{{for element, index in collection}}`):
+```html
+<ul>
+{{for user, index in users}}
+<li>{{index}} - Hello {{user.name}}</li>
+{{/for}}
+</ul>
+```
+
 Inside of the for, we expose some helpers: `isFirst`, `isLast`, `isOdd`, `isEven`. Here how to use them:
 
 ```html
