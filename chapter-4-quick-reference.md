@@ -39,6 +39,15 @@ Hello {{user.name}}
 </ul>
 ```
 
+You can expose the index of the current iteration by following the syntax `{{for element, index in collection}}`):
+```html
+<ul>
+{{for user, index in users}}
+<li>{{index}} - Hello {{user.name}}</li>
+{{/for}}
+</ul>
+```
+
 ## Render Statement
 ```html
 <html>
