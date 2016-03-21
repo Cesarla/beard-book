@@ -10,10 +10,10 @@
 
 ## Comment Statement
 ```html
-{{# This is an inline comment #}}
-{{# This is
+{{- This is an inline comment -}}
+{{- This is
 a multiline comment
-#}}
+-}}
 ```
 
 ## If Statement
