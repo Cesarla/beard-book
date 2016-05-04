@@ -1,6 +1,6 @@
 # Render Statement
 
-Let's say we have a template named "some-template" which looks like this:
+Let's say we have a template named `some-template` which looks like this:
 
 ```html
 Hello {{ name }}! Your age is {{ age }}!
