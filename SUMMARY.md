@@ -7,4 +7,5 @@
 * [Filters](chapter-4-filters.md)
 * [Quick Reference](chapter-5-quick-reference.md)
 * Statements
-  * Render Statement
+   * [Render Statement](statements/render_statement.md)
+
