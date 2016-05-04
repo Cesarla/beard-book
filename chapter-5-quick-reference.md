@@ -55,6 +55,7 @@ You can expose the index of the current iteration by following the syntax `{{for
     {{ render "/templates/_css.beard" }}
   </header>
   <body>
+    {{ render "/templates/body.beard" personName="Dan" account=myAccount }}
   </body>
   {{ render "/templates/_js.beard" }}
 </html>
