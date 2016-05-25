@@ -46,7 +46,7 @@ You can expose the index of the current iteration by following the syntax `{{for
 </ul>
 ```
 
-Inside of the for, we expose some helpers: `isFirst`, `isLast`, `isOdd`, `isEven`. Here how to use them:
+Inside of the for, we expose some helpers: `isFirst`, `isLast`, `isNotLast`, `isOdd`, `isEven`. Here how to use them:
 
 ```html
 <div>
@@ -54,6 +54,7 @@ Inside of the for, we expose some helpers: `isFirst`, `isLast`, `isOdd`, `isEven
     <span>{{user.name}}</span>
     <span>isFirst: {{user.isFirst}}</span>
     <span>isLast: {{user.isLast}}</span>
+    <span>isNotLast: {{user.isNotLast}}</span>
     <span>isOdd: {{user.isOdd}}</span>
     <span>isEven: {{user.isEven}}</span>
   {{/for}}
